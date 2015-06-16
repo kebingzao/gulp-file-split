@@ -43,7 +43,7 @@ module.exports = function(options) {
           }
           var content = str.substring(startIndex,endIndex);
           tempFile.contents = new Buffer(content);
-          console.log(content);
+          //console.log(content);
           sthis.push(tempFile);
         }
         console.log("split end");
