@@ -12,11 +12,11 @@ npm install --save-dev gulp-file-split
 Then, add it to your `gulpfile.js`:
 
 ```javascript
-var file_split  = require('gulp_file_split');
+var gsplit  = require('gulp-file-split');
 
 gulp.task('split', function() {
   gulp.src('file.txt')
-          .pipe(file_split({
+          .pipe(gsplit({
               suffix: 'resource_',
               ext: 'txt',
               count: 3
