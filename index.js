@@ -16,9 +16,8 @@ module.exports = function(options) {
     }
 
     if (file.isBuffer()) {
-      // 分割的次数要大于一次
       if(options.count && parseInt(options.count) > 1){
-        // 文件夹的前缀
+        // sub file prefix
         var prefix = options.prefix || 'file_';
         var count = options.count;
         var ext = options.ext || 'txt';
@@ -26,7 +25,6 @@ module.exports = function(options) {
         var totalLength = str.length;
         var startIndex = 0;
         var endIndex = 0;
-        // 每一块分片
         var eachIndex = parseInt(totalLength/count);
         var tempFile = null;
         var sthis = this;
