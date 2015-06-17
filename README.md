@@ -28,7 +28,7 @@ gulp.task('split', function() {
 
 ## API
 
-### file_split(options)
+### gsplit(options)
 
 
 #### options

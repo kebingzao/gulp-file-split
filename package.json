@@ -1,6 +1,6 @@
 {
   "name": "gulp-file-split",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "split file to multiple for gulp",
   "dependencies": {
     "gulp-util": "^3.0.1",
