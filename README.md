@@ -19,7 +19,8 @@ gulp.task('split', function() {
           .pipe(gsplit({
               suffix: 'resource_',
               ext: 'txt',
-              count: 3
+              //count: 3,
+              splitPattern: "/*--FILE"
           }))
           .pipe(gulp.dest('tmp'));
 });
@@ -50,3 +51,9 @@ Type: `String`
 Default: `txt`
 
 the sub file suffix name
+
+
+##### options.splitPattern
+Type: 'String'
+
+Defines a pattern by which you can split the file, can be regex.
